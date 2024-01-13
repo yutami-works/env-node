@@ -2,11 +2,11 @@
 Node.jsの環境構築
 
 ## Node.jsのインストール
-公式からインストールする
+公式からインストーラをダウンロードして実行するだけでよい。
 
 https://nodejs.org/en
 
-## インストール確認
+### インストール確認
 Node.jsのバージョン確認
 ```
 $ node -v
@@ -20,5 +20,17 @@ $ npm -v
 
 ## コードの実行
 ```
-$ node hello.js
+$ node server.js
+```
+
+## モジュールの使用
+[npm](https://docs.npmjs.com/)を使って外部モジュールを組み込むことができる。
+
+package.jsonの作成
+```
+npm init
+```
+
+```
+npm install <モジュール名>
 ```
